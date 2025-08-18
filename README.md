@@ -2,6 +2,33 @@
 
 The presented Git Commit Message Template is used by Git to populate one's favorite terminal, IDE, or other workflow with a helpful guide to the common Conventional Commit Specification.
 
+```text
+
+
+#subject-|---------|---------|---------|---------|---------|---------|---------|---------|-------->|
+# <type>(<optional scope>): <imperative subject>
+# empty separator line
+# <optional body>
+# empty separator line
+# <optional footer>
+#
+# Types -
+# API relevant changes
+#   feat - commits add a new feature           || perf     - commits improve performance
+#   fix  - commits fix a bug                   || refactor - commits code changes that neither
+#                                              ||              fixes a bug (fix) nor adds a
+# build  - commits affect the build system or  ||            feature (feat)
+#          external dependencies               || revert   - revert a previous commit
+# ci     - commits CI configuration files      || style    - commits SHOULD not affect the meaning
+#          and scripts                         ||            (white-space, formatting, missing
+# chore  - commits include changes that don't  ||            semi-colons, etc.)
+#          modify src or test file, e.g.,      || test     - commits add missing tests or
+#          .gitignore changes                  ||            correcting existing tests
+# docs   - commits are documentation only      ||
+#
+#body and footer---|---------|---------|---------|---------|---------|---------|---------|-------->|
+```
+
 ## Usage
 
 To add this to your Git workflow, set the `commit.template` property in your Global Git Config as follows:
@@ -37,5 +64,13 @@ EOF
 
 This will wrap text in commit messages to 100 characters.
 
+## Samples
 
+### NetBeans
+
+![NetBeans dialog](images/netbeans.png)
+
+### vi
+
+![vi gitcommit](images/vi.png)
 
